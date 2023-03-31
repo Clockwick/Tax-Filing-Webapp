@@ -17,6 +17,18 @@ To run the project, follow these steps:
 ## Project Description
 Web application for informing tax and calculation 
 
+## Sample
+<table>
+  <tr>
+    <td><img width="450" alt="image" src="https://user-images.githubusercontent.com/50941709/229110576-5b3a648f-1c4b-42c7-ada9-2453d11ccd67.png"></td>
+    <td><img width="450" alt="image" src="https://user-images.githubusercontent.com/50941709/229110778-99711e0d-cc56-4605-bf9a-50266e265a85.png"></td>
+  </tr>
+  <tr>
+    <td><img width="450" alt="image" src="https://user-images.githubusercontent.com/50941709/229110863-2bc00654-c624-4c39-b62a-8cffe90c5919.png"></td>
+    <td><img width="450" alt="image" src="https://user-images.githubusercontent.com/50941709/229110945-3a58bcaa-6c50-486f-9365-f2469e450a45.png"></td>
+  </tr>
+</table>
+
 ## Folder Structure
 ```
 .
