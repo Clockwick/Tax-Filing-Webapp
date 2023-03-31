@@ -18,6 +18,7 @@ To run the project, follow these steps:
 Web application for informing tax and calculation 
 
 ## Folder Structure
+```
 .
 ├── README.md
 ├── angular.json
@@ -86,3 +87,4 @@ Web application for informing tax and calculation
 ├── tsconfig.app.json
 ├── tsconfig.json
 └── tsconfig.spec.json
+```
