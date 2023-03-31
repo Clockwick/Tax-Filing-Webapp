@@ -1,27 +1,88 @@
-# TaxFillingProject
+# Tax Filing
+This project is built with Angular 12, TypeScript, and Bootstrap 5.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+## How to Run the Project
+To run the project, follow these steps:
 
-## Development server
+1. Clone the repository to your local machine.
+2. Install the dependencies by running npm install in the project root directory.
+3. Run the development server using ng serve command.
+4. Open your web browser and navigate to http://localhost:4200/.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
+- Angular 12
+- TypeScript
+- Bootstrap 5
 
-## Code scaffolding
+## Project Description
+Web application for informing tax and calculation 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Folder Structure
+.
+├── README.md
+├── angular.json
+├── package-lock.json
+├── package.json
+├── src
+│   ├── app
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── card
+│   │   │   ├── card.component.css
+│   │   │   ├── card.component.html
+│   │   │   ├── card.component.spec.ts
+│   │   │   └── card.component.ts
+│   │   ├── data.service.spec.ts
+│   │   ├── data.service.ts
+│   │   ├── filling-type
+│   │   │   ├── filling-type.component.css
+│   │   │   ├── filling-type.component.html
+│   │   │   ├── filling-type.component.spec.ts
+│   │   │   └── filling-type.component.ts
+│   │   ├── month
+│   │   │   ├── month.component.css
+│   │   │   ├── month.component.html
+│   │   │   ├── month.component.spec.ts
+│   │   │   └── month.component.ts
+│   │   ├── review-card
+│   │   │   ├── review-card.component.css
+│   │   │   ├── review-card.component.html
+│   │   │   ├── review-card.component.spec.ts
+│   │   │   └── review-card.component.ts
+│   │   ├── stepper
+│   │   │   ├── stepper.component.css
+│   │   │   ├── stepper.component.html
+│   │   │   ├── stepper.component.spec.ts
+│   │   │   └── stepper.component.ts
+│   │   ├── summary
+│   │   │   ├── summary.component.css
+│   │   │   ├── summary.component.html
+│   │   │   ├── summary.component.spec.ts
+│   │   │   └── summary.component.ts
+│   │   ├── summary-dialog
+│   │   │   ├── summary-dialog.component.css
+│   │   │   ├── summary-dialog.component.html
+│   │   │   ├── summary-dialog.component.spec.ts
+│   │   │   └── summary-dialog.component.ts
+│   │   ├── tax-computation
+│   │   │   ├── tax-computation.component.css
+│   │   │   ├── tax-computation.component.html
+│   │   │   ├── tax-computation.component.spec.ts
+│   │   │   └── tax-computation.component.ts
+│   │   └── tax-filling-detail
+│   │       ├── tax-filling-detail.component.css
+│   │       ├── tax-filling-detail.component.html
+│   │       ├── tax-filling-detail.component.spec.ts
+│   │       └── tax-filling-detail.component.ts
+│   ├── assets
+│   ├── favicon.ico
+│   ├── global.d.ts
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json

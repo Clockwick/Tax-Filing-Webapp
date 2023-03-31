@@ -1,0 +1,26 @@
+<form [formGroup]="filingGroup" class="d-flex flex-column gap-3">  
+  <div class="d-flex gap-1">
+    <label>Type of filling</label>
+    <label class="text-danger">*</label>
+  </div>
+  <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center">
+    <mat-checkbox 
+      formControlName="checkbox1" 
+      [checked]="getCheckbox1Value()"
+      (change)="onCheckboxChange(0)">
+    </mat-checkbox>
+    {{getCheckboxLabel(0)}} 
+      <mat-icon fontIcon="help"></mat-icon>
+    </div>
+    <div class="d-flex align-items-center">
+    <mat-checkbox 
+      formControlName="checkbox2" 
+      [checked]="getCheckbox2Value()"
+      (change)="onCheckboxChange(1)">
+    </mat-checkbox>
+    {{getCheckboxLabel(1)}}
+      <mat-icon fontIcon="help"></mat-icon>
+    </div>
+</div>
+</form>

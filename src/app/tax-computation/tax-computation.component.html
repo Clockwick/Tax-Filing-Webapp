@@ -1,0 +1,79 @@
+<div class="mat-h1 underline fw-bold">{{title}}</div>
+<div class="d-flex flex-column gap-3">
+  <div class="d-flex gap-1">
+    <label class="fw-bold">Provide total value taxable electronic service</label>
+    <label class="text-danger">*</label>
+  </div>
+  <ul class="list-unstyled">
+    <li class="mb-2">
+      <div class="d-flex justify-content-between align-items-center">
+      <label>1. Underdeclared Thai taxable electronic service</label>
+      <mat-form-field appearance="outline">
+        <div class="input-container">
+          <input matInput type="text" (focus)="onFocus()" [(ngModel)]="taxAmount" (blur)="onBlur($event)" (input)="onInput($event)">
+          <span matSuffix>THB</span>
+        </div>
+      </mat-form-field>
+      </div>
+    </li>
+    <li class="mb-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <label>2. Total VAT to be remitted (7% of 1.)</label>
+        <mat-form-field appearance="outline">
+          <div class="input-container">
+            <input matInput type="text"  [(ngModel)]="vatAmount" (focus)="onFocusVat()" (input)="onInputVat($event)" (blur)="onBlurVat($event)">
+            <span matSuffix>THB</span>
+          </div>
+          <mat-hint *ngIf="shouldShowInvalidTax" class="text-danger">Invalid tax</mat-hint>
+        </mat-form-field> 
+      </div>
+    </li>
+  </ul>
+  <div *ngIf="shouldShowLatePayment()" class="d-flex flex-column gap-3">
+  <div class="d-flex gap-1">
+    <label class="fw-bold">In case of late filling and payment, or additional payment filling</label>
+    <label class="text-danger">*</label>
+  </div>
+  <ul class="list-unstyled">
+    <li class="mb-2">
+      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        3. Surcharge
+        <mat-icon fontIcon="help"></mat-icon>
+      </div>
+      <mat-form-field appearance="outline">
+        <div class="input-container">
+          <input matInput [placeholder]="getSurchargePlaceholder()" [disabled]="true" class="text-end">
+        </div>
+      </mat-form-field>
+      </div>
+    </li>
+    <li class="mb-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          4. Penalty
+          <mat-icon fontIcon="help"></mat-icon>
+        </div>
+        <mat-form-field appearance="outline">
+          <div class="input-container">
+            <input matInput [placeholder]="getPenaltyPlaceholder()" [disabled]="true" class="text-end">
+          </div>
+        </mat-form-field> 
+      </div>
+    </li>
+    <li class="mb-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <label>5. Total amount of VAT,surcharge,and penalty to be remitted (2.+3.+4.)</label>
+        <mat-form-field appearance="outline">
+          <div class="input-container">
+            <input matInput [placeholder]="getTotalAmountPlaceholder()" [disabled]="true" class="text-end">
+          </div>
+        </mat-form-field> 
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="d-flex justify-content-center">
+  <label *ngIf="!getIsValid()" class="text-danger">Invalid Data</label>
+</div>

@@ -1,0 +1,16 @@
+<mat-stepper #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Input Tax</ng-template>
+      <input-detail-card/>
+      <button class="mt-3" mat-raised-button matStepperNext color="primary" [disabled]="getShouldDisabled()">Next</button>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" label="Review & Confirm" class="vw-50">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Review & Confirm</ng-template>
+      <review-card/>
+      <button class="mt-3" mat-raised-button matStepperPrevious>Back</button>
+    </form>
+  </mat-step>
+</mat-stepper>

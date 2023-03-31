@@ -1,0 +1,41 @@
+<div class="mat-h1 underline fw-bold">Tax Filling Detail</div>
+<ul class="list-unstyled">
+  <li class="mb-2">
+    <div class="row">
+    <label class="fw-bold col-2">Type of filing</label>
+    <label class="col-10">{{this.getFilingType()}}</label>
+    </div>
+  </li>
+  <li class="mb-2">
+    <div class="row">
+      <label class="fw-bold col-2">VAT Month</label>
+      <label class="col-10">{{this.getVatMonth()}}</label>
+      </div> 
+  </li>
+</ul>
+<div class="mat-h1 underline fw-bold">Tax Computation</div>  
+<ul class="list-unstyled">
+  <li class="mb-2">
+    <div class="row">
+      <label class="fw-bold col-6">Total value of taxable electronic service exclusive of VAT</label>
+      <label class="col-6 d-flex justify-content-end">{{this.getTaxAmount()}} THB</label>
+    </div>
+  </li>
+  <li class="mb-2">
+    <div class="row">
+      <div class="d-flex flex-column gap-1 col-8">
+        <label class="fw-bold">Total VAT to be remitted</label>
+        <label class="fw-light">(7% of Total value of taxable electronic service exclusive of VAT)</label>
+      </div>
+      <label class="col-4 d-flex justify-content-end">{{this.getVatAmount()}} THB</label>
+      </div> 
+  </li>
+  <li class="mb-2">
+    <div class="row">
+      <label class="fw-bold col-6">Total Amount Payable</label>
+      <label class="fw-bold col-6 d-flex justify-content-end">{{this.getTotalAmount()}} THB</label>
+    </div>
+  </li> 
+</ul>
+<div class="mat-h1 underline fw-bold">Declaration</div>  
+<p>I hereby certify that information given above are true and correct and agree to be bound by such information</p>
